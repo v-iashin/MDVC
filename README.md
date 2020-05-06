@@ -1,10 +1,11 @@
-# Multi-modal Dense Video Captioning
-
-| [Project Page](https://v-iashin.github.io/mdvc.html) | [Paper](https://arxiv.org/abs/2003.07758) |
-
-PyTorch implementation of Multi-modal Dense Video Captioning.
 
 ![MDVC](https://github.com/v-iashin/v-iashin.github.io/raw/master/images/mdvc/MDVC.svg "MDVC")
+
+# Multi-modal Dense Video Captioning
+[Project Page](https://v-iashin.github.io/mdvc) | [Paper](https://arxiv.org/abs/2003.07758)
+
+This is a PyTorch implementation of our paper Multi-modal Dense Video Captioning (CVPR Workshops 2020).
+
 
 ## Usage
 Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3). 
@@ -12,7 +13,7 @@ Clone this repository. Mind the `--recursive` flag to make sure `submodules` are
 git clone --recursive https://github.com/v-iashin/MDVC.git
 ```
 
-Download features [I3D (17GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5), [VGGish (1GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.vggish.hdf5) and put in `./data/` folder. You may use `curl -O <link>` to download the features.
+Download features [I3D (17GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5), [VGGish (1GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.vggish.hdf5) and put in `./data/` folder (speech segments are already there). You may use `curl -O <link>` to download the features.
 
 ```
 a661cfe3535c0d832ec35dd35a4fdc42  sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5
@@ -25,7 +26,7 @@ Setup `conda` environment. Requirements are in file `conda_env.yml`
 conda env create -f conda_env.yml
 ```
 
-## Run Training and Predictions
+## Train and Predict
 
 Run the training and prediction script. It will, first, train the captioning model and, then, evaluate the predictions of the best model in the learned proposal setting. It will take ~24 hours (50 epochs) to run on a 2080Ti GPU. Please, note that the performance is expected to reach its peak after ~30 epochs.
 ```bash
@@ -44,9 +45,9 @@ You may also download the pre-trained model [here (~600 MB)](https://storage.goo
 If you want to skip the training procedure, you may replicate the main results of the paper using the prediction files in `./results` and the [official evaluation script](https://github.com/ranjaykrishna/densevid_eval/tree/9d4045aced3d827834a5d2da3c9f0692e3f33c1c). 
 
 1. To evaluate the performance in the learned proposal set up, run the official evaluation script on `./results/results_val_learned_proposals_e30.json`. Our final result is 6.8009
-2. To evaluate the performance on ground truth segments, run the script on each validation part (`./results/results_val_*_e30.json`) individually against the corresponding ground truth files (use `-r` argument in the script). When both values are obtained average them to verify the final result. We got 9.9407 and 10.2478 on `val_1` and `val_2` parts, respectively, thus, the average is 10.094.
+2. To evaluate the performance on ground truth segments, run the script on each validation part (`./results/results_val_*_e30.json`) against the corresponding ground truth files (use `-r` argument in the script to specify each of them). When both values are obtained, average them to verify the final result. We got 9.9407 and 10.2478 on `val_1` and `val_2` parts, respectively, thus, the average is 10.094.
 
-As we mentioned in the paper, we didn't have access to the full dataset as [ActivityNet Captions](https://cs.stanford.edu/people/ranjaykrishna/densevid/) is distributed as the list of links to YouTube. Consequently, many videos (~8.8 %) were no longer available at the time when we were downloading the dataset. In addition, some videos didn't have any speech. We filtered out such videos from the validation files and reported the results as `no missings` in the paper. Please create an issue if you would like us to share the filtered validation files which were used for `no missings` results.
+As we mentioned in the paper, we didn't have access to the full dataset as [ActivityNet Captions](https://cs.stanford.edu/people/ranjaykrishna/densevid/) is distributed as the list of links to YouTube video. Consequently, many videos (~8.8 %) were no longer available at the time when we were downloading the dataset. In addition, some videos didn't have any speech. We filtered out such videos from the validation files and reported the results as `no missings` in the paper. Please create an issue if you would like us to share these filtered validation files.
 
 ## Misc.
 
