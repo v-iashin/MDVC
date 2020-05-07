@@ -36,9 +36,9 @@ python main.py --device_ids 1
 ```
 The script keeps the log files, including `tensorboard` log, under `./log` directory by default. You may specify other path using `--log_dir` argument. Also, if you stored the downloaded data (`.hdf5`) files in another directory other than `./data`, make sure to specify it using `–-video_features_path` and `--audio_features_path` arguments.
 
-You may also download the pre-trained model [here (~600 MB)](https://storage.googleapis.com/mdvc/best_model.pt).
+You may also download the pre-trained model [here (~2 GB)](https://storage.googleapis.com/mdvc/best_model.pt).
 ```
-17caed992b5a97d982abcf6d2173865b  best_model.pt
+55cda5bac1cf2b7a803da24fca60898b  best_model.pt
 ```
 
 ## Evaluation Scrips and Results
