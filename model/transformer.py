@@ -1,3 +1,7 @@
+######################################################################################
+# The implementation relies on http://nlp.seas.harvard.edu/2018/04/03/attention.html #
+######################################################################################
+
 from copy import deepcopy
 
 import numpy as np

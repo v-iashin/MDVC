@@ -1,3 +1,7 @@
+######################################################################################
+# The implementation relies on http://nlp.seas.harvard.edu/2018/04/03/attention.html #
+######################################################################################
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

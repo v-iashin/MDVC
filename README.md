@@ -30,6 +30,7 @@ conda env create -f conda_env.yml
 
 Run the training and prediction script. It will, first, train the captioning model and, then, evaluate the predictions of the best model in the learned proposal setting. It will take ~24 hours (50 epochs) to run on a 2080Ti GPU. Please, note that the performance is expected to reach its peak after ~30 epochs.
 ```bash
+# make sure to activate environment: conda activate mdvc
 # the cuda:1 device will be used for the run
 python main.py --device_ids 1
 ```
