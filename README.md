@@ -24,6 +24,7 @@ Setup `conda` environment. Requirements are in file `conda_env.yml`
 ```bash
 # it will create new conda environment called 'mdvc' on your machine 
 conda env create -f conda_env.yml
+conda activate mdvc
 ```
 
 ## Train and Predict

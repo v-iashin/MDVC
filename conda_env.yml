@@ -44,8 +44,8 @@ dependencies:
   - murmurhash=0.28.0=py37hf484d3e_0
   - ncurses=6.2=he6710b0_1
   - ninja=1.9.0=py37hfd86e86_0
-  - numpy=1.18.1=py37h4f9e942_0
-  - numpy-base=1.18.1=py37hde5b4d6_1
+  - numpy=1.15.4=py37h7e9f1db_0
+  - numpy-base=1.15.4=py37hde5b4d6_0
   - olefile=0.46=py37_0
   - openssl=1.1.1g=h7b6447c_0
   - pandas=0.24.2=py37he6710b0_0
