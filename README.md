@@ -1,11 +1,19 @@
-
-![MDVC](https://github.com/v-iashin/v-iashin.github.io/raw/master/images/mdvc/MDVC.svg "MDVC")
+<img src="https://github.com/v-iashin/v-iashin.github.io/raw/master/images/mdvc/MDVC.svg" alt="MDVC" width="900">
 
 # Multi-modal Dense Video Captioning
 [Project Page](https://v-iashin.github.io/mdvc) | [Paper](https://arxiv.org/abs/2003.07758)
 
 This is a PyTorch implementation of our paper Multi-modal Dense Video Captioning (CVPR Workshops 2020).
 
+The publication will appear in the conference proceedings of CVPR Workshops. Please, use this bibtex citation
+```
+@InProceedings{MDVC_Iashin_2020,
+  author = {Iashin, Vladimir and Rahtu, Esa},
+  title = {Multi-modal Dense Video Captioning},
+  booktitle = {Workshop on Multimodal Learning (CVPR Workshop)},
+  year = {2020}
+}
+```
 
 ## Usage
 Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3). 
@@ -56,14 +64,3 @@ As we mentioned in the paper, we didn't have access to the full dataset as [Acti
 We additionally provide
 - the file with subtitles with original timestamps in `./data/asr_en.csv`
 - the file with video categories in `./data/vid2cat.json`
-
-## Citation
-The publication will appear in conference proceedings of CVPR Workshops. Please, use this bibtex citation
-```
-@InProceedings{MDVC_Iashin_2020,
-  author = {Iashin, Vladimir and Rahtu, Esa},
-  title = {Multi-modal Dense Video Captioning},
-  booktitle = {Workshop on Multimodal Learning (CVPR Workshop)},
-  year = {2020}
-}
-```
