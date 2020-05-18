@@ -21,7 +21,7 @@ Clone this repository. Mind the `--recursive` flag to make sure `submodules` are
 git clone --recursive https://github.com/v-iashin/MDVC.git
 ```
 
-Download features [I3D (17GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5), [VGGish (1GB)](https://storage.googleapis.com/mdvc/sub_activitynet_v1-3.vggish.hdf5) and put in `./data/` folder (speech segments are already there). You may use `curl -O <link>` to download the features.
+Download features [I3D (17GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5), [VGGish (1GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/sub_activitynet_v1-3.vggish.hdf5) and put in `./data/` folder (speech segments are already there). You may use `curl -O <link>` to download the features.
 
 ```
 a661cfe3535c0d832ec35dd35a4fdc42  sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5
@@ -45,7 +45,7 @@ python main.py --device_ids 1
 ```
 The script keeps the log files, including `tensorboard` log, under `./log` directory by default. You may specify other path using `--log_dir` argument. Also, if you stored the downloaded data (`.hdf5`) files in another directory other than `./data`, make sure to specify it using `–-video_features_path` and `--audio_features_path` arguments.
 
-You may also download the pre-trained model [here (~2 GB)](https://storage.googleapis.com/mdvc/best_model.pt).
+You may also download the pre-trained model [here (~2 GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/best_model.pt).
 ```
 55cda5bac1cf2b7a803da24fca60898b  best_model.pt
 ```
