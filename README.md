@@ -15,6 +15,8 @@ The publication will appear in the conference proceedings of CVPR Workshops. Ple
 }
 ```
 
+If you found this work interesting, [check out](https://v-iashin.github.io/bmt) our latest paper, where we propose a novel architecture for the dense video captioning task called **Bi-modal Transformer with Proposal Generator**.
+
 ## Usage
 Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3). 
 ```bash
