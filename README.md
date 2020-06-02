@@ -63,8 +63,13 @@ If you want to skip the training procedure, you may replicate the main results o
 
 As we mentioned in the paper, we didn't have access to the full dataset as [ActivityNet Captions](https://cs.stanford.edu/people/ranjaykrishna/densevid/) is distributed as the list of links to YouTube video. Consequently, many videos (~8.8 %) were no longer available at the time when we were downloading the dataset. In addition, some videos didn't have any speech. We filtered out such videos from the validation files and reported the results as `no missings` in the paper. We provide these filtered ground truth files in `./data`.
 
-## Details on Feature Extraction
-Check out our script for extraction of the I3D features from a set of videos: [i3d_features on GitHub](https://github.com/v-iashin/i3d_features). Also see [#4](https://github.com/v-iashin/MDVC/issues/7) for more details.
+## Raw Data & Details on Feature Extraction
+If you are feeling brave, you may want to download raw videos and extract features on your own. Check out our script for extraction of the I3D features from a set of videos: [i3d_features on GitHub](https://github.com/v-iashin/i3d_features). Also see [#7](https://github.com/v-iashin/MDVC/issues/7) for more details on configuration.
+
+The raw videos can be downloaded here: [``, ~300GB](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/raw_video.zip)
+```
+16f99fc8dd26263a958bffc2cf5f9738  ./raw_video.zip
+```
 
 ## Misc.
 
