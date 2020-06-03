@@ -26,6 +26,7 @@ git clone --recursive https://github.com/v-iashin/MDVC.git
 Download features [I3D (17GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5), [VGGish (1GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/sub_activitynet_v1-3.vggish.hdf5) and put in `./data/` folder (speech segments are already there). You may use `curl -O <link>` to download the features.
 
 ```
+# MD5 Hash
 a661cfe3535c0d832ec35dd35a4fdc42  sub_activitynet_v1-3.i3d_25fps_stack24step24_2stream.hdf5
 54398be59d45b27397a60f186ec25624  sub_activitynet_v1-3.vggish.hdf5
 ```
@@ -51,6 +52,7 @@ The script keeps the log files, including `tensorboard` log, under `./log` direc
 
 You may also download the pre-trained model [here (~2 GB)](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/best_model.pt).
 ```
+# MD5 Hash
 55cda5bac1cf2b7a803da24fca60898b  best_model.pt
 ```
 
@@ -68,11 +70,11 @@ If you are feeling brave, you may want to download raw videos and extract featur
 
 The raw videos can be downloaded here: [~300GB](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/raw_video.zip)
 ```
+# MD5 Hash
 16f99fc8dd26263a958bffc2cf5f9738  ./raw_video.zip
 ```
 
 ## Misc.
-
 We additionally provide
 - the file with subtitles with original timestamps in `./data/asr_en.csv`
 - the file with video categories in `./data/vid2cat.json`
