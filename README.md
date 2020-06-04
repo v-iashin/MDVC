@@ -41,7 +41,6 @@ python -m spacy download en
 ```
 
 ## Train and Predict
-
 Run the training and prediction script. It will, first, train the captioning model and, then, evaluate the predictions of the best model in the learned proposal setting. It will take ~24 hours (50 epochs) to run on a 2080Ti GPU. Please, note that the performance is expected to reach its peak after ~30 epochs.
 ```bash
 # make sure to activate environment: conda activate mdvc
@@ -57,7 +56,6 @@ You may also download the pre-trained model [here (~2 GB)](https://a3s.fi/swift/
 ```
 
 ## Evaluation Scrips and Results
-
 If you want to skip the training procedure, you may replicate the main results of the paper using the prediction files in `./results` and the [official evaluation script](https://github.com/ranjaykrishna/densevid_eval/tree/9d4045aced3d827834a5d2da3c9f0692e3f33c1c). 
 
 1. To evaluate the performance in the learned proposal set up, run the official evaluation script on `./results/results_val_learned_proposals_e30.json`. Our final result is 6.8009
@@ -66,15 +64,12 @@ If you want to skip the training procedure, you may replicate the main results o
 As we mentioned in the paper, we didn't have access to the full dataset as [ActivityNet Captions](https://cs.stanford.edu/people/ranjaykrishna/densevid/) is distributed as the list of links to YouTube video. Consequently, many videos (~8.8 %) were no longer available at the time when we were downloading the dataset. In addition, some videos didn't have any speech. We filtered out such videos from the validation files and reported the results as `no missings` in the paper. We provide these filtered ground truth files in `./data`.
 
 ## Raw Data & Details on Feature Extraction
-If you are feeling brave, you may want to download raw videos and extract features on your own. Check out our script for extraction of the I3D features from a set of videos: [i3d_features on GitHub](https://github.com/v-iashin/i3d_features). Also see [#7](https://github.com/v-iashin/MDVC/issues/7) for more details on configuration.
-
-The raw videos can be downloaded here: [~300GB](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/raw_video.zip)
-```
-# MD5 Hash
-16f99fc8dd26263a958bffc2cf5f9738  ./raw_video.zip
-```
+If you are feeling brave, you may want extract features on your own. Check out our script for extraction of the I3D features from a set of videos: [i3d_features on GitHub](https://github.com/v-iashin/i3d_features). Also see [#7](https://github.com/v-iashin/MDVC/issues/7) for more details on configuration.
 
 ## Misc.
 We additionally provide
 - the file with subtitles with original timestamps in `./data/asr_en.csv`
 - the file with video categories in `./data/vid2cat.json`
+
+## Acknowledgments
+Funding for this research was provided by the Academy of Finland projects 327910 & 324346. The authors acknowledge CSC — IT Center for Science, Finland, for computational resources for our experimentation.
