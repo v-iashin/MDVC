@@ -1,7 +1,7 @@
 <img src="https://github.com/v-iashin/v-iashin.github.io/raw/master/images/mdvc/MDVC.svg" alt="MDVC" width="900">
 
 # Multi-modal Dense Video Captioning
-[Project Page](https://v-iashin.github.io/mdvc) | [Paper](https://arxiv.org/abs/2003.07758)
+[Project Page](https://v-iashin.github.io/mdvc) | [Paper](http://openaccess.thecvf.com/content_CVPRW_2020/html/w56/Iashin_Multi-Modal_Dense_Video_Captioning_CVPRW_2020_paper.html)
 
 This is a PyTorch implementation of our paper Multi-modal Dense Video Captioning (CVPR Workshops 2020).
 
@@ -9,8 +9,8 @@ The publication will appear in the conference proceedings of CVPR Workshops. Ple
 ```
 @InProceedings{MDVC_Iashin_2020,
   author = {Iashin, Vladimir and Rahtu, Esa},
-  title = {Multi-modal Dense Video Captioning},
-  booktitle = {Workshop on Multimodal Learning (CVPR Workshop)},
+  title = {Multi-Modal Dense Video Captioning},
+  booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
   year = {2020}
 }
 ```
