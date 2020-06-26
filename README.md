@@ -2,13 +2,7 @@
 
 # Multi-modal Dense Video Captioning
 
----
-
-## **If you are attending CVPR 2020, feel free to see our workshop presentation (Oral 6 - W70) and ask questions on [19th of June at 14:50 PDT](http://cvpr20.com/event/oral-6-w70/) and [20th of June at 02:50 PDT](http://cvpr20.com/event/oral-6-w702nd-time/). The organizers promised to release the presentations later for general audience. Once it is done, we will share the links.**
-
----
-
-[Project Page](https://v-iashin.github.io/mdvc) | [Paper](http://openaccess.thecvf.com/content_CVPRW_2020/html/w56/Iashin_Multi-Modal_Dense_Video_Captioning_CVPRW_2020_paper.html)
+[Project Page](https://v-iashin.github.io/mdvc) | [Proceedings](http://openaccess.thecvf.com/content_CVPRW_2020/html/w56/Iashin_Multi-Modal_Dense_Video_Captioning_CVPRW_2020_paper.html) | [ArXiv](https://arxiv.org/abs/2003.07758) | Presentation ([YouTube](https://www.youtube.com/watch?v=0Vmx_gzP1bM), [Mirror](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/14-oral.mp4))
 
 This is a PyTorch implementation of our paper Multi-modal Dense Video Captioning (CVPR Workshops 2020).
 
@@ -75,7 +69,7 @@ If you are feeling brave, you may want extract features on your own. Check out o
 
 ## Misc.
 We additionally provide
-- the file with subtitles with original timestamps in `./data/asr_en.csv`.
+- the file with subtitles with original timestamps in `./data/asr_en.csv`
 - the file with video categories in `./data/vid2cat.json`
 
 ## Acknowledgments
