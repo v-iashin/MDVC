@@ -2,7 +2,7 @@
 
 # Multi-modal Dense Video Captioning
 
-[Project Page](https://v-iashin.github.io/mdvc) | [Proceedings](http://openaccess.thecvf.com/content_CVPRW_2020/html/w56/Iashin_Multi-Modal_Dense_Video_Captioning_CVPRW_2020_paper.html) | [ArXiv](https://arxiv.org/abs/2003.07758) | Presentation ([YouTube](https://www.youtube.com/watch?v=0Vmx_gzP1bM), [Mirror](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/14-oral.mp4))
+[Project Page](https://v-iashin.github.io/mdvc) | [Proceedings](http://openaccess.thecvf.com/content_CVPRW_2020/html/w56/Iashin_Multi-Modal_Dense_Video_Captioning_CVPRW_2020_paper.html) | [ArXiv](https://arxiv.org/abs/2003.07758) | [Presentation](https://www.youtube.com/watch?v=0Vmx_gzP1bM) ([Mirror](https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/mdvc/14-oral.mp4))
 
 This is a PyTorch implementation of our paper Multi-modal Dense Video Captioning (CVPR Workshops 2020).
 
@@ -19,7 +19,7 @@ The publication will appear in the conference proceedings of CVPR Workshops. Ple
 If you found this work interesting, [check out](https://v-iashin.github.io/bmt) our latest paper, where we propose a novel architecture for the dense video captioning task called **Bi-modal Transformer with Proposal Generator**.
 
 ## Usage
-Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3). 
+Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3).
 ```bash
 git clone --recursive https://github.com/v-iashin/MDVC.git
 ```
@@ -34,7 +34,7 @@ a661cfe3535c0d832ec35dd35a4fdc42  sub_activitynet_v1-3.i3d_25fps_stack24step24_2
 
 Setup `conda` environment. Requirements are in file `conda_env.yml`
 ```bash
-# it will create new conda environment called 'mdvc' on your machine 
+# it will create new conda environment called 'mdvc' on your machine
 conda env create -f conda_env.yml
 conda activate mdvc
 # install spacy language model. Make sure you activated the conda environment
@@ -57,7 +57,7 @@ You may also download the pre-trained model [here (~2 GB)](https://a3s.fi/swift/
 ```
 
 ## Evaluation Scrips and Results
-If you want to skip the training procedure, you may replicate the main results of the paper using the prediction files in `./results` and the [official evaluation script](https://github.com/ranjaykrishna/densevid_eval/tree/9d4045aced3d827834a5d2da3c9f0692e3f33c1c). 
+If you want to skip the training procedure, you may replicate the main results of the paper using the prediction files in `./results` and the [official evaluation script](https://github.com/ranjaykrishna/densevid_eval/tree/9d4045aced3d827834a5d2da3c9f0692e3f33c1c).
 
 1. To evaluate the performance in the learned proposal set up, run the official evaluation script on `./results/results_val_learned_proposals_e30.json`. Our final result is 6.8009
 2. To evaluate the performance on ground truth segments, run the script on each validation part (`./results/results_val_*_e30.json`) against the corresponding ground truth files (use `-r` argument in the script to specify each of them). When both values are obtained, average them to verify the final result. We got 9.9407 and 10.2478 on `val_1` and `val_2` parts, respectively, thus, the average is 10.094.
@@ -74,3 +74,6 @@ We additionally provide
 
 ## Acknowledgments
 Funding for this research was provided by the Academy of Finland projects 327910 & 324346. The authors acknowledge CSC — IT Center for Science, Finland, for computational resources for our experimentation.
+
+## Media Coverage
+- (in Russian) [Рубрика «Читаем статьи за вас». Июнь 2020 года (habr.com)](https://habr.com/ru/company/ods/blog/515688/)
