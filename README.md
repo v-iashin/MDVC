@@ -20,6 +20,8 @@ The publication will appear in the conference proceedings of CVPR Workshops. Ple
 If you found this work interesting, [check out](https://v-iashin.github.io/bmt) our latest paper, where we propose a novel architecture for the dense video captioning task called **Bi-modal Transformer with Proposal Generator**.
 
 ## Usage
+_The code is tested on `Ubuntu 16.04/18.04` with one `NVIDIA GPU 1080Ti/2080Ti`. If you are planning to use it with other software/hardware, you might need to adapt `conda` environment files or even the code._
+
 Clone this repository. Mind the `--recursive` flag to make sure `submodules` are also cloned (evaluation scripts for Python 3).
 ```bash
 git clone --recursive https://github.com/v-iashin/MDVC.git
