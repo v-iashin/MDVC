@@ -1,4 +1,4 @@
-name: mdvc_new
+name: mdvc
 channels:
   - pytorch
   - conda-forge
